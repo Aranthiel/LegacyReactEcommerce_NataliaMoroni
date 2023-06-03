@@ -17,9 +17,9 @@ import {
 } from 'reactstrap';
 
 // estilos
-import "./Header.css";
+import "./Navbar.css";
 // sub componentes
-import Chart from '../Chart/Chart';
+import CartWidget from '../CartWidget/CartWidget';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,21 +30,21 @@ const Header = () => {
 
     <div className="container">
       <Navbar className="navbar navbar-expand-lg bg-dark" dark full fixed /*{...args*}*/>
-        <NavbarBrand className="navbar-brand" href="/">reactstrap</NavbarBrand>
+        <NavbarBrand className="navbar-brand" href="/">MiMarca</NavbarBrand>
         <NavbarToggler className="navbar-toggler" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/components/">Ropa</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
+                Tecnologia
               </NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options
+                Joyas
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>Option 1</DropdownItem>
@@ -54,10 +54,11 @@ const Header = () => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          {/* <NavbarText>Simple Text</NavbarText> */}
+          <CartWidget/>
         </Collapse>
       </Navbar>
-      <Chart/>
+      
     </div>
   )
 }
