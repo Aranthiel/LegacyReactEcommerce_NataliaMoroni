@@ -7,7 +7,7 @@ import "./CartWidget.css"
 let URL=`${Canasto}`
 <img src={URL} alt="Canasto de compras" />*/
 
-const Chart = () => {
+const CartWidget = () => {
   return (
     <div className="canastoCompras">
       
@@ -19,4 +19,4 @@ const Chart = () => {
   )
 }
 
-export default Chart
+export default CartWidget

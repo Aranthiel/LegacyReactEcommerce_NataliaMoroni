@@ -13,8 +13,8 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
+      <ItemListContainer greeting="Proyecto Ecommerce creado con CREATE REACT APP - Mensaje pasado por Prop: Requerimiento de CoderHouse"/>
       <ProductCard/>
-      <ItemListContainer greeting="soy una prop que pide coderhouse"/>
       <Footer/>
     </div>
   );

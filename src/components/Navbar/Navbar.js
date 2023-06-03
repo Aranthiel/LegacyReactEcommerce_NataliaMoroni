@@ -13,7 +13,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText,
+  // NavbarText,
 } from 'reactstrap';
 
 // estilos
@@ -21,7 +21,7 @@ import "./Navbar.css";
 // sub componentes
 import CartWidget from '../CartWidget/CartWidget';
 
-const Header = () => {
+const NavbarProyecto = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -63,4 +63,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default NavbarProyecto
