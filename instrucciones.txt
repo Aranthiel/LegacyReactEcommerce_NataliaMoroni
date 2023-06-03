@@ -1,0 +1,16 @@
+desde consola cmd, posicionarse en la carpeta donde queremos crear el proyecto
+ejecutar el comando npx create-react-app nombre-de-mi-aplicacion 
+cd nombre-de-mi-aplicacion 
+
+LISTO! el proyecto esta creado
+ahora se puede instalar bootstrap o la libreria que se quiera implementar
+
+borrar archivos innecesarios :
+cd s tab enter
+rm nobredelarchivo
+
+
+para correr la aplicacion: npm start
+
+los componentes se crean a mano, en una carpeta compnents dentro de src. 
+cada componente lleva un archivo  Componente.css y uno Componente.js
